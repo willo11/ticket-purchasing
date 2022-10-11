@@ -1,6 +1,6 @@
 {
-  "appName": "Ticket Purchasing",
+    "appName": "Ticket Purchasing",
     "form": {
-        "message select" : "Please select a show"
+        "messageSelect": "Please select a show: "
     }
 }
