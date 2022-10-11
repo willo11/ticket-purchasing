@@ -1,6 +1,7 @@
 {
     "appName": "Ticket Purchasing",
     "form": {
-        "messageSelect": "Please select a show: "
+        "messageSelect": "Please select a show: ",
+        "quantity": "please select the quantity to purchase: "
     }
 }
