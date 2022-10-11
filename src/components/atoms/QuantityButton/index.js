@@ -25,7 +25,7 @@ const QuantityButton = () => {
     }
 
     return (
-        <div className="custom-number-input h-10 w-fit">
+        <div className="custom-number-input h-10 w-fit  mx-auto">
             <div className="flex flex-row  h-10  rounded-lg relative bg-transparent mt-1">
                 <button onClick={decrement} className="bg-green-800 text-white hover:text-gray-700 hover:bg-white hover:border-green-800 hover:border h-full w-20 rounded-l cursor-pointer outline-none">
                     <span className="m-auto text-2xl font-thin">−</span>

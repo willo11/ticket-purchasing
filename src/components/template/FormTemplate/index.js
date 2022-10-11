@@ -18,7 +18,7 @@ const FormTemplate = () => {
                     <div className="divide-y divide-gray-300/50">
                         <div className="space-y-6 py-8 text-base leading-7 text-gray-600">
                             <p>{text.form.messageSelect}</p>
-                            <div className="mt-auto">
+                            <div className="mt-auto mx-auto">
                                 <SelectShow />
                             </div>
                             <p>{text.form.quantity}</p>
