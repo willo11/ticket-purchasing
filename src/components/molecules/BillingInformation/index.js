@@ -6,7 +6,7 @@ import SelectFranchise from '../../atoms/SelectFranchise';
 
 const BillingInformation = () => {
 
-    const { billingData, setBillingData, setView } = useContext(OrderContext);
+    const { setView } = useContext(OrderContext);
 
     const [loading, setLoading] = useState(false)
 

@@ -5,7 +5,7 @@ import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 // @ Data
 import { OrderContext } from '../../../context/OrderContext'
 
-const countries = [
+export const countries = [
     'Mexico', 'Colombia', 'Canada'
 ]
 

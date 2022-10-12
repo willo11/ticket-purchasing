@@ -14,7 +14,6 @@ const QuantityButton = () => {
     const increment = () => {
         setQuantity(prevState => {
             const result = Math.min(prevState + 1, 10)
-            console.log(result)
             return result
         });
     }

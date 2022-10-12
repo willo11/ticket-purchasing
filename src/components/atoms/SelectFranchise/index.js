@@ -5,7 +5,7 @@ import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 // @ Data
 import { OrderContext } from '../../../context/OrderContext'
 
-const franchise = [
+export const franchise = [
     'Visa', 'Master Card', 'American Express'
 ]
 
