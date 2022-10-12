@@ -3,7 +3,7 @@ import React from 'react'
 import language from '../../../data/text';
 import QuantityButton from '../../atoms/QuantityButton';
 import SelectShow from '../../atoms/SelectShow';
-import BillingInformation from '../../molecules/BillingInformation';
+import BillingInformation from '../../organisms/BillingInformation';
 
 const text = language.en
 

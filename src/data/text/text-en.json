@@ -13,8 +13,11 @@
     "payment": {
         "action": "Payment",
         "useCard": "Use Credit / Debit Card",
+        "userName": "User Name",
+        "edit": "Edit",
+        "delete": "Delete",
         "securityCode": "Security Code",
-        "3digits": "3 digits on back of card",
+        "digits": "3-digits on back of card",
         "newCard": "Add New Card",
         "payWith": "Or Pay With",
         "payWtihDescription": "By using a digital wallet and continuing past this page, you have read and are accepting the ",

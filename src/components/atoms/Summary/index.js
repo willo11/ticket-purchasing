@@ -7,7 +7,7 @@ import language from '../../../data/text';
 
 const text = language.en
 
-const Payment = () => {
+const Summary = () => {
     const order = useContext(OrderContext);
     console.log(order);
 
@@ -43,4 +43,4 @@ const Payment = () => {
     )
 }
 
-export default Payment
+export default Summary
