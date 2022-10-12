@@ -3,5 +3,36 @@
     "form": {
         "messageSelect": "Please select a show: ",
         "quantity": "please select the quantity to purchase: "
+    },
+    "delivery": {
+        "action": "delivery",
+        "mobile": "Mobile Entry - Free",
+        "ticketDate": "Tickets Available by ",
+        "description": "These mobile tickets will be transfered directly to you form a trusted seller. We'll email you instructions on how yo accept them on the original ticket privder's mobile app."
+    },
+    "payment": {
+        "action": "Payment",
+        "useCard": "Use Credit / Debit Card",
+        "securityCode": "Security Code",
+        "3digits": "3 digits on back of card",
+        "newCard": "Add New Card",
+        "payWith": "Or Pay With",
+        "payWtihDescription": "By using a digital wallet and continuing past this page, you have read and are accepting the ",
+        "terms": "Terms of Use"
+    },
+    "summary": {
+        "resale": "Resale Tickets: ",
+        "notes": "Notes From Seller",
+        "fees": "Fees",
+        "service": "Service Fee:",
+        "order": "Order Processing Fee",
+        "delivery": "Delivery",
+        "mobile": "Mobile Entry",
+        "cancel": "Cancel Order",
+        "refund": "*All Sales Final - No Refunds",
+        "textTerms": "I have read and agree to the current ",
+        "terms": "Terms of Use.",
+        "button": "Place Order",
+        "exception": "Exeptions may apply, see our Terms of Use."
     }
 }
