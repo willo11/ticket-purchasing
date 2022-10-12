@@ -36,7 +36,7 @@ const CardCredit = () => {
     const image = franchise.findIndex((franchiseName) => billingData.franchise === franchiseName)
 
     return (
-        <div className="mt-6 space-y-4 xl:mt-12">
+        <div className="mt-3 space-y-4">
             <div className=" shadow-md flex items-start flex-col justify-between max-w-2xl px-3 py-4 border border-zinc-500 cursor-pointer bg-zinc-50 rounded-none">
                 <div className="flex gap-2 items-start">
                     <input type="radio" readOnly className="border-grey-300 border border-x w-5 h-5 mt-2" checked />
