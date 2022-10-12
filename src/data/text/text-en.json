@@ -24,10 +24,12 @@
         "terms": "Terms of Use"
     },
     "summary": {
+        "total": "Total",
+        "tickets": "Tickets",
         "resale": "Resale Tickets: ",
         "notes": "Notes From Seller",
         "fees": "Fees",
-        "service": "Service Fee:",
+        "service": "Service Fee: ",
         "order": "Order Processing Fee",
         "delivery": "Delivery",
         "mobile": "Mobile Entry",
@@ -36,6 +38,6 @@
         "textTerms": "I have read and agree to the current ",
         "terms": "Terms of Use.",
         "button": "Place Order",
-        "exception": "Exeptions may apply, see our Terms of Use."
+        "exception": "*Exeptions may apply, see our Terms of Use."
     }
 }

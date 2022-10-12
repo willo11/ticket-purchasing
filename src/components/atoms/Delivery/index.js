@@ -9,7 +9,6 @@ const text = language.en
 
 const Delivery = () => {
     const order = useContext(OrderContext);
-    console.log(order);
 
     const formatDate = (date) => {
         const dateTemp = new Date(date);

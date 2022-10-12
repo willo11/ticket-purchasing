@@ -6,7 +6,7 @@ import SelectFranchise from '../../atoms/SelectFranchise';
 
 const BillingInformation = () => {
 
-    const { setView, billingData } = useContext(OrderContext);
+    const { setView } = useContext(OrderContext);
 
     const [loading, setLoading] = useState(false)
 
@@ -18,8 +18,6 @@ const BillingInformation = () => {
         }, 1000);
         e.preventDefault();
     }
-
-    console.log(billingData)
 
     return (
         <div className="mt-5 md:col-span-2 md:mt-0">

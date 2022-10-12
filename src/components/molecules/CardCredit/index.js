@@ -18,7 +18,7 @@ const franchiseImg = [visa, masterCard, americanExpress]
 
 const CardCredit = () => {
 
-    const { billingData } = useContext(OrderContext);
+    const { billingData, setView } = useContext(OrderContext);
 
     const formatExp = (exp) => {
         const divide = exp.match(/.{1,2}/g);
@@ -26,11 +26,18 @@ const CardCredit = () => {
         return join
     }
 
+    const addNew = (e) => {
+        setTimeout(() => {
+            setView(1)
+        }, 1000);
+        e.preventDefault();
+    }
+
     const image = franchise.findIndex((franchiseName) => billingData.franchise === franchiseName)
 
     return (
         <div className="mt-6 space-y-4 xl:mt-12">
-            <div className=" shadow-md flex items-start flex-col justify-between max-w-2xl px-3 py-4 m-auto border border-zinc-500 cursor-pointer bg-zinc-50 rounded-none">
+            <div className=" shadow-md flex items-start flex-col justify-between max-w-2xl px-3 py-4 border border-zinc-500 cursor-pointer bg-zinc-50 rounded-none">
                 <div className="flex gap-2 items-start">
                     <input type="radio" readOnly className="border-grey-300 border border-x w-5 h-5 mt-2" checked />
                     <div className="flex flex-col  gap-2">
@@ -48,11 +55,11 @@ const CardCredit = () => {
                                     </h2>
                                 </div>
                                 <div className="flex  font-light  gap-2">
-                                    <h2 className=" text-sky-500 font-medium hover:text-sky-600">
+                                    <h2 className=" text-sky-500 font-medium hover:text-sky-600 ">
                                         {text.payment.edit}
                                     </h2>
                                     |
-                                    <h2 className=" text-sky-500 font-medium hover:text-sky-600">
+                                    <h2 className=" text-sky-500 font-medium hover:text-sky-600 ">
                                         {text.payment.delete}
                                     </h2>
                                 </div>
@@ -64,7 +71,9 @@ const CardCredit = () => {
                     </div>
                 </div>
             </div>
-            <div className="px-3 flex items-center text-sky-500 hover:text-sky-600">
+            <div
+                onClick={addNew}
+                className="px-3 flex items-center text-sky-500 hover:text-sky-600 cursor-pointer">
                 <PlusIcon className="w-8 h-8" />
                 <CreditCardIcon className="h-9 w-9 ml-2 font-light text-black mx-2" />
                 <p className="font-semibold">

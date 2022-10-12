@@ -35,7 +35,7 @@ const Payment = () => {
                     </p>
                     <p className="text-sm block">
                         {text.payment.payWtihDescription}
-                        <span className="text-sky-500 hover:text-sky-600">
+                        <span className="text-sky-500 hover:text-sky-600 cursor-pointer">
                             {text.payment.terms}
                         </span>
                         .
