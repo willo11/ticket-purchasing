@@ -6,7 +6,7 @@ import SelectFranchise from '../../atoms/SelectFranchise';
 
 const BillingInformation = () => {
 
-    const { setView } = useContext(OrderContext);
+    const { setView, billingData } = useContext(OrderContext);
 
     const [loading, setLoading] = useState(false)
 
@@ -19,6 +19,7 @@ const BillingInformation = () => {
         e.preventDefault();
     }
 
+    console.log(billingData)
 
     return (
         <div className="mt-5 md:col-span-2 md:mt-0">
@@ -59,6 +60,19 @@ const BillingInformation = () => {
                                     name="card-code"
                                     id="card-code"
                                     autoComplete="card-code"
+                                    minLength="10"
+                                    maxLength="10"
+                                    pattern="[0-9]{10}"
+                                />
+                            </div>
+                            <div className="col-span-6 sm:col-span-3 lg:col-span-3">
+                                <InputForm
+                                    label="Exp"
+                                    name="exp"
+                                    id="exp"
+                                    minLength="4"
+                                    maxLength="4"
+                                    pattern="[0-9]{4}"
                                 />
                             </div>
                             <div className="col-span-6 sm:col-span-3">

@@ -1,5 +1,6 @@
 import React from 'react'
 import Delivery from '../../atoms/Delivery'
+import Payment from '../../atoms/Payment'
 
 const Checkout = () => {
     return (
@@ -9,8 +10,12 @@ const Checkout = () => {
                     <div class="row-span-2 col-start-auto col-span-6 md:col-span-4">
                         <Delivery />
                     </div>
-                    <div class="row-span-6 col-span-6 md:col-span-2">2</div>
-                    <div class="row-span-4 col-span-6 md:col-span-4">3</div>
+                    <div class="row-span-6 col-span-6 md:col-span-2">
+                        2
+                    </div>
+                    <div class="row-span-4 col-span-6 md:col-span-4">
+                        <Payment />
+                    </div>
                 </div>
             </div>
         </div>
