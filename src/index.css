@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: Proxima Nova, system-ui, sans-serif;
+  }
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -14,13 +20,4 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .custom-number-input button:focus {
   outline: none !important;
-}
-
-.box {
-  @apply bg-indigo-700
-		text-gray-100
-		min-w-full
-		h-32
-		min-h-full
-		rounded;
 }

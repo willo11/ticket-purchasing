@@ -5,7 +5,7 @@
         "quantity": "please select the quantity to purchase: "
     },
     "delivery": {
-        "action": "delivery",
+        "action": "Delivery",
         "mobile": "Mobile Entry - Free",
         "ticketDate": "Tickets Available by ",
         "description": "These mobile tickets will be transfered directly to you form a trusted seller. We'll email you instructions on how yo accept them on the original ticket privder's mobile app."
