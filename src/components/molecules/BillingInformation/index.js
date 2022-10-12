@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { OrderContext } from '../../../context/OrderContext';
 import InputForm from '../../atoms/InputForm';
 import SelectCountry from '../../atoms/SelectCountry';
@@ -8,8 +8,14 @@ const BillingInformation = () => {
 
     const { billingData, setBillingData, setView } = useContext(OrderContext);
 
+    const [loading, setLoading] = useState(false)
+
     const submitButton = (e) => {
-        setView(2)
+        setLoading(true)
+        setTimeout(() => {
+            setView(2)
+            setLoading(false)
+        }, 1000);
         e.preventDefault();
     }
 
@@ -101,7 +107,9 @@ const BillingInformation = () => {
                         </div>
                     </div>
                     <div className="px-6 pb-3 text-right sm:px-6">
-                        <button type="submit"
+                        <button
+                            type="submit"
+                            disabled={loading}
                             className="inline-flex justify-center rounded-md border border-transparent bg-green-800 py-2 px-5 text-sm font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
                         >
                             Save
